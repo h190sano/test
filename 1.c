@@ -7,7 +7,7 @@ int main(void)
   printf("n = ");
   scanf("%d", &n);
 
-  if( n % 1 == 0 ){
+  if( (n & 1) == 0 ){　//演算子の優先順位が変わってしまうから。
     printf("%d は偶数です\n", n);
   }
   return 0;
